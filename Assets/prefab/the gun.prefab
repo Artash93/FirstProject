@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6490930689851064924}
   - component: {fileID: 83872653248743956}
   - component: {fileID: 3348258191225045861}
-  - component: {fileID: 461654110873806660}
   - component: {fileID: 3204326987775288687}
   - component: {fileID: -2838592260251551862}
   - component: {fileID: -4976308552435019758}
@@ -95,29 +94,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &461654110873806660
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256002995023101588}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &3204326987775288687
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -191,6 +167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b5c7ccf68814a9b87770f95a5fd18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::bullet
-  speed: 0
-  uron: 25
+  speed: 15
+  uron: 50
   target: {fileID: 859358676191300448, guid: f28e63cf1348c4854aac771a4556756c, type: 3}

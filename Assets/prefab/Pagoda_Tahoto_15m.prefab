@@ -113,7 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::towerShot
   theGun: {fileID: 256002995023101588, guid: 6c0f60792b56742e9ac130cb0ae8a750, type: 3}
   fire: {fileID: 7198215553745745007}
-  target: {fileID: 0}
+  target: {fileID: 859358676191300448, guid: f28e63cf1348c4854aac771a4556756c, type: 3}
   firetime: 2
 --- !u!4 &107206656017599310 stripped
 Transform:

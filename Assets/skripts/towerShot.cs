@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class towerShot : MonoBehaviour
 {
+    [SerializeField] private int Health= 100; 
+    
     [SerializeField] private GameObject theGun;
 
     [SerializeField] private Transform fire; // выстрел ( тут мы респим пулю ) создал спавн для пули
@@ -11,6 +13,15 @@ public class towerShot : MonoBehaviour
     [SerializeField] private int firetime = 2;
 
     private float timer = 0f;
+
+    void DamegeFromEnemy(int EnemyUron)
+    {
+            Health -= EnemyUron;
+            if (Health <= 0)
+            {
+             Destroy(gameObject);
+            }
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

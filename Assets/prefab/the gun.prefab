@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 3348258191225045861}
   - component: {fileID: 3204326987775288687}
   - component: {fileID: -2838592260251551862}
-  - component: {fileID: -4976308552435019758}
   - component: {fileID: -1977252999093197446}
   m_Layer: 0
   m_Name: the gun
@@ -142,19 +141,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.99999994
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-4976308552435019758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256002995023101588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eecfb6405ff1148fc9025920cf41cea7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  _spawn: {fileID: 256002995023101588}
 --- !u!114 &-1977252999093197446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,6 +153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b5c7ccf68814a9b87770f95a5fd18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::bullet
-  speed: 15
+  speed: 5
   uron: 50
   target: {fileID: 859358676191300448, guid: f28e63cf1348c4854aac771a4556756c, type: 3}

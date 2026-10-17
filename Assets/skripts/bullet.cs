@@ -7,14 +7,14 @@ public class bullet : MonoBehaviour
     [SerializeField] public int uron = 25;
 
     [SerializeField] private Transform target;
-    
-    void OnTriggerEnter (Collider other) // важно
+
+    void OnTriggerEnter(Collider other) // важно
     {
         if (other.CompareTag("Enemy"))
         {
             Debug.Log("Есть контакт с " + other.name);
             Enemy enemy = other.GetComponent<Enemy>();
-                
+
             if (enemy != null)
             {
                 enemy.TakeDamage(uron);
@@ -22,19 +22,23 @@ public class bullet : MonoBehaviour
             }
         }
     }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
+
     // Update is called once per frame
     void Update()
-    
+
     {
         if (target == null)
             return;
-        transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+
+        transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime
+        );
+
     }
-    
-    }
+}
 

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2257132727817832573
+--- !u!1 &8862771292620599564
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,30 +8,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7198215553745745007}
+  - component: {fileID: 4134133512609262234}
   m_Layer: 0
-  m_Name: PoitOfFire
+  m_Name: poinoffire
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7198215553745745007
+--- !u!4 &4134133512609262234
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2257132727817832573}
+  m_GameObject: {fileID: 8862771292620599564}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2441256, y: 2.2033107, z: -2.8814468}
+  m_LocalPosition: {x: -0.2441256, y: 2, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 107206656017599310}
+  m_Father: {fileID: 4108435503947006831}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &107206656017469904
+--- !u!1001 &4108435503946881521
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -41,7 +41,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100030, guid: d9641d8b9b1dab9409bcd6761371f72c, type: 3}
       propertyPath: m_Name
-      value: Pagoda_Tahoto_15m
+      value: town1
       objectReference: {fileID: 0}
     - target: {fileID: 400030, guid: d9641d8b9b1dab9409bcd6761371f72c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49,11 +49,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400030, guid: d9641d8b9b1dab9409bcd6761371f72c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7966892
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400030, guid: d9641d8b9b1dab9409bcd6761371f72c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 35.881447
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 400030, guid: d9641d8b9b1dab9409bcd6761371f72c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -87,36 +87,37 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 400030, guid: d9641d8b9b1dab9409bcd6761371f72c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7198215553745745007}
+      insertIndex: 34
+      addedObject: {fileID: 4134133512609262234}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100030, guid: d9641d8b9b1dab9409bcd6761371f72c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6918401889570171321}
+      addedObject: {fileID: 3826390256896507971}
   m_SourcePrefab: {fileID: 100100000, guid: d9641d8b9b1dab9409bcd6761371f72c, type: 3}
---- !u!1 &107206656017504110 stripped
+--- !u!1 &4108435503946850127 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100030, guid: d9641d8b9b1dab9409bcd6761371f72c, type: 3}
-  m_PrefabInstance: {fileID: 107206656017469904}
+  m_PrefabInstance: {fileID: 4108435503946881521}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6918401889570171321
+--- !u!114 &3826390256896507971
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 107206656017504110}
+  m_GameObject: {fileID: 4108435503946850127}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ba4c08191b9f4f7cbf4d4e497c4f4a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::towerShot
-  theGun: {fileID: 256002995023101588, guid: 6c0f60792b56742e9ac130cb0ae8a750, type: 3}
-  fire: {fileID: 7198215553745745007}
-  target: {fileID: 859358676191300448, guid: f28e63cf1348c4854aac771a4556756c, type: 3}
+  Health: 100
+  theGun: {fileID: 342241799221047986, guid: 60fc050fbadea42c7810d7c1ccec106a, type: 3}
+  fire: {fileID: 4134133512609262234}
+  target: {fileID: 0}
   firetime: 2
---- !u!4 &107206656017599310 stripped
+--- !u!4 &4108435503947006831 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400030, guid: d9641d8b9b1dab9409bcd6761371f72c, type: 3}
-  m_PrefabInstance: {fileID: 107206656017469904}
+  m_PrefabInstance: {fileID: 4108435503946881521}
   m_PrefabAsset: {fileID: 0}

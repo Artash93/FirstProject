@@ -2,17 +2,14 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class Spawn: MonoBehaviour
 {
-    [SerializeField] public GameObject _spawn;
-
+    
+    [SerializeField] public Enemy _spawn;
     [SerializeField] private float time;
-    private float speed = 3;
     [SerializeField] public Transform Pointofspawn;
     [SerializeField] public Transform target;
     
- 
-
     void Start()
     {
        
@@ -24,18 +21,14 @@ public class NewMonoBehaviourScript : MonoBehaviour
         time += Time.deltaTime;
         if (time >= 2f)
         {
-            
-            Spawn();
+            SpawnEnemy();
             time = 0f;
-            
         }
         
-        transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-     
     }
-
-    void Spawn()
+    void SpawnEnemy()
     {
-        Instantiate(_spawn, Pointofspawn.position,Pointofspawn.rotation );
+       var newEnemy= Instantiate(_spawn, Pointofspawn.position,Pointofspawn.rotation );
+        newEnemy.Init(target);
     }
 }

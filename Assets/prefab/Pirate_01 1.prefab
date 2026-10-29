@@ -9625,6 +9625,7 @@ GameObject:
   - component: {fileID: 8761828260080657010}
   - component: {fileID: 4857717726471540143}
   - component: {fileID: 9185003386964129788}
+  - component: {fileID: 1935556180897501506}
   m_Layer: 0
   m_Name: Pirate_01 1
   m_TagString: Enemy
@@ -9751,6 +9752,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1935556180897501506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8591973289908766687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 843e8c458c5be4827a9f6a0dee185df2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  _tranform: {fileID: 0}
+  EnemyHealth: 100
+  _target: {fileID: 0}
 --- !u!1 &8691809905133260145
 GameObject:
   m_ObjectHideFlags: 0

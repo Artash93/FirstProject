@@ -43,6 +43,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: town1
       objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: d9641d8b9b1dab9409bcd6761371f72c, type: 3}
+      propertyPath: m_TagString
+      value: Tower
+      objectReference: {fileID: 0}
     - target: {fileID: 400030, guid: d9641d8b9b1dab9409bcd6761371f72c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7558744
@@ -93,6 +97,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100030, guid: d9641d8b9b1dab9409bcd6761371f72c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3826390256896507971}
+    - targetCorrespondingSourceObject: {fileID: 100030, guid: d9641d8b9b1dab9409bcd6761371f72c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2385169127053867870}
   m_SourcePrefab: {fileID: 100100000, guid: d9641d8b9b1dab9409bcd6761371f72c, type: 3}
 --- !u!1 &4108435503946850127 stripped
 GameObject:
@@ -112,10 +119,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::towerShot
   Health: 100
-  theGun: {fileID: 342241799221047986, guid: 60fc050fbadea42c7810d7c1ccec106a, type: 3}
+  theGun: {fileID: 0}
   fire: {fileID: 4134133512609262234}
   target: {fileID: 0}
   firetime: 2
+--- !u!135 &-2385169127053867870
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4108435503946850127}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &4108435503947006831 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400030, guid: d9641d8b9b1dab9409bcd6761371f72c, type: 3}

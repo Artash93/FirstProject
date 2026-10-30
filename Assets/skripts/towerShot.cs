@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class towerShot : MonoBehaviour
 {
-    [SerializeField] private int Health= 100; 
+    [SerializeField] public int Health= 100; 
     
     [SerializeField] private GameObject theGun;
 
@@ -13,8 +13,9 @@ public class towerShot : MonoBehaviour
     [SerializeField] private int firetime = 2;
 
     private float timer = 0f;
-
-    void DamegeFromEnemy(int EnemyUron)
+    
+    
+  public  void DamegeFromEnemy(int EnemyUron) 
     {
             Health -= EnemyUron;
             if (Health <= 0)

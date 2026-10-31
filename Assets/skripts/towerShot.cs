@@ -4,20 +4,20 @@ public class towerShot : MonoBehaviour
 {
     [SerializeField] public int Health= 100; 
     
-    [SerializeField] private GameObject theGun;
+    [SerializeField] private bullet theGun;
 
     [SerializeField] private Transform fire; // выстрел ( тут мы респим пулю ) создал спавн для пули
 
     [SerializeField] private Transform target;
+    
 
-    [SerializeField] private int firetime = 2;
-
-    private float timer = 0f;
+   public float timer;
     
     
   public  void DamegeFromEnemy(int EnemyUron) 
     {
             Health -= EnemyUron;
+            Debug.Log("Осталось здоровья башни: " + Health);
             if (Health <= 0)
             {
              Destroy(gameObject);
@@ -33,21 +33,22 @@ public class towerShot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (target == null)
-            return;
+       
 
         timer += Time.deltaTime; // таймер
 
-        if (timer >= firetime)
+        if (timer >= 2f)
         {
+           
             AgainBullet(); // создаст новую пулю
-            timer = 0; // обнулит
+            timer = 0f; 
         }
     }
 
     void AgainBullet()
     {
-        Instantiate(theGun, fire.position, fire.rotation);
+      var NewBullet=  Instantiate(theGun, fire.position, fire.rotation);
+       NewBullet.Init(target);
     }
 }
     

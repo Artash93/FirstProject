@@ -23,6 +23,12 @@ public class Spawn: MonoBehaviour
         {
             SpawnEnemy();
             time = 0f;
+            
+        }
+
+        if (target == null)
+        {
+            enabled = false;
         }
         
     }

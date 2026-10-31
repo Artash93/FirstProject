@@ -24,7 +24,7 @@ public class bullet : MonoBehaviour
             
             if (_enemy != null)
             { 
-                _enemy.TakeDamage(uron);
+                _enemy.GetDamage(uron);
             }
         }
     }
@@ -38,9 +38,7 @@ public class bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
 
-    {
-       
-
+    { 
         transform.position = Vector3.MoveTowards(transform.position, _target.position, speed * Time.deltaTime
         );
 

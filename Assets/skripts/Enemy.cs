@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour
        }
     }
    
-    public void TakeDamage(int uron)
+    public void GetDamage(int uron)
     {
         EnemyHealth -= uron;
         if (EnemyHealth <= 0)
